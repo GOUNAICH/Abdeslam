@@ -1,0 +1,29 @@
+/*===== WORK =====*/
+.wrapper {
+  margin: 0; padding: 0;
+  width: 100%; min-height: 100vh;
+  background: linear-gradient(90deg, rgb(0,0,2) 0%, rgba(9,9,121,1) 35%, rgba(0,212,225,1) 100%);
+}
+.work__container { row-gap: 2rem; padding: 2rem 0; }
+.work__img {
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: block;
+}
+.work__img img { transition: 1s; width: 100%; }
+.work__img img:hover { transform: scale(1.1); }
+
+@media screen and (min-width: 576px) {
+  .work__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding-top: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .work__container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+}
